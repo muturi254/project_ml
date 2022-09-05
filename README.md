@@ -15,6 +15,7 @@ python3 -m pip install --user virtualenv
 # Use a command similar to this one:
 python3 -m virtualenv --python=<path-to-Python3.7> .devops
 source .devops/bin/activate
+pip install -r requirements.txt
 ```
 * Run `make install` to install the necessary dependencies
 
@@ -23,6 +24,7 @@ source .devops/bin/activate
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
+3. Run prediction Kubernetes:  `./make_prediction.sh`
 
 ### Kubernetes Steps
 
