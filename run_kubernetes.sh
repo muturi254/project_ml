@@ -8,12 +8,16 @@ dockerpath="ashorta/project_ml"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-
+kubectl run prediction --image="ashorta/project_ml" --port=80 --labels app=prediction
+# kubectl run prediction_app_check\
+#     # --generator=run-pod/v1\
+#     --image=$dockerpath\
+#     --port=80 --labels app=prediction_app_check
 
 # Step 3:
 # List kubernetes pods
-kubctl get pods
+kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-ubectl port-forward 
+kubectl port-forward prediction 8001:80

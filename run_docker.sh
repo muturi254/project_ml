@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run --name prediction_app -it -p 5000:80 project_ml
+docker run --name predictions_app -d -p 5000:80 ashorta/project_ml  
