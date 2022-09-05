@@ -4,7 +4,7 @@
 
 # Step 1:
 # This is your Docker ID/path
-# dockerpath=<>
+dockerpath="ashorta/project_ml"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
@@ -12,7 +12,8 @@
 
 # Step 3:
 # List kubernetes pods
+kubctl get pods
 
 # Step 4:
 # Forward the container port to a host
-
+ubectl port-forward 

@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build -t ashorta/project_ml: latest . 
+docker build -t ashorta/project_ml:latest . 
 
 # Step 2: 
 # List docker images
